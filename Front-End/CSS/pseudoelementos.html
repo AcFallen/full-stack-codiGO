@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pseudoelementos</title>
+</head>
+<!--PseudoElementos-->
+<style>
+   
+    p::first-letter{
+        font-size: 44px;
+    }
+    p::first-line{
+        color: green;
+    }
+    
+    p::before{
+        content: "Agregando Before ";
+    }
+    p::after{
+        content: "Agregando After";
+    }
+
+    /*Este elemento puede cambiar el color de la seleccion*/
+    *::selection{
+        background: pink;
+    }
+
+</style>
+<body>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus excepturi nesciunt quo voluptatibus quod, a dicta? Perferendis nemo similique, tempora quaerat quibusdam est aperiam voluptatum dolorum vero et dolor natus!</p>
+</body>
+</html>

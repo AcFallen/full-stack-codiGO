@@ -9,3 +9,31 @@
 input[disabled]{
     background-color: rgb(212, 207, 207);
 }
+
+a{
+    text-decoration: none;
+}
+
+/*SELECTOR DE PSEUDOCLASE*/
+a:hover{
+    text-decoration: underline;
+}
+
+input:focus{
+    background-color: green;
+}
+
+/*Selector descendiente*/
+/*Selector por indice con la pseudoclase NTH-CHILD*/
+
+
+
+ul li:nth-child(2) { /*Se puede usar los parametros (even) para los elementos pares y (odd) para los elementos impares*/
+    color: blue;
+}
+ul li:first-child{
+    color: aqua;
+}
+ul li:last-child{
+    color:aquamarine;
+}

@@ -1,0 +1,11 @@
+[href]{
+    color: red;
+}
+
+[href ="https://www.youtube.com/"]{
+    color:blue;
+}
+
+input[disabled]{
+    background-color: rgb(212, 207, 207);
+}

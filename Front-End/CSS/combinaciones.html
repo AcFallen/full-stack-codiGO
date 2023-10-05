@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Combinaciones</title>
+</head>
+<body>
+    <!--Selectores combinados-->
+    <style>
+        body p{
+            font-family: Arial, Helvetica, sans-serif;
+            
+            font-size: 14px;
+        }
+
+        p span {
+            font-size: 30px;
+            color: pink;
+        }
+    </style>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus praesentium nisi molestiae minus saepe omnis reiciendis id distinctio aliquam magni. Quaerat eos earum facilis architecto a blanditiis quidem illum fuga.</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, provident quisquam accusantium minima vel at eaque! Beatae, neque repellat? Nobis neque accusantium voluptate error aliquam impedit esse, odio rem facere.</p>
+
+    <p>
+        <span>
+            hola soy un span
+        </span>
+    </p>
+
+    <style>
+        ul > li{
+            border-top: solid red;
+        }
+    </style>
+    <ul>
+        <li>Unrodered item</li>
+        <li>Unrodered item</li>
+        <ol>
+            <li>item1</li>
+            <li>item2</li>
+        </ol>
+    </ul>
+
+    <!--Selector Simbling-->
+
+    <style>
+        h2 ~ p {
+            background-color: blue;
+        }
+    </style>
+
+    <h2>Titulo</h2>
+    <p>parrafo</p>
+    <h2>titulo</h2>
+    <span>span</span>
+    <p>parrafo</p>
+    <h2>Titulo</h2>
+    <p>parrafo</p>
+</body>
+</html>

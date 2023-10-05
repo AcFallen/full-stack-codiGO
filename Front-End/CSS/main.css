@@ -1,3 +1,4 @@
+
 h1{
     color: blue;
 }
@@ -5,4 +6,12 @@ h1{
 h2{
     font-weight: bold;
     color: brown;
+}
+
+.subtitulo{
+    color: red;
+}
+
+#titulo2{
+    color:coral
 }

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,40 +17,59 @@
     password
     y un boton llamado registrarse.-->
 
+    <header>
+        <nav class="container">
+            <ul>
+                <li><strong>Tecsup</strong></li>
+            </ul>
+
+            <ul>
+                <li><a href="">Inicio</a></li>
+                <li><a href="">Nosotros</a></li>
+            </ul>
+        </nav>
+    </header>
+
     <main class="container">
 
-        <h1>Registrarse</h1>
-        <label>
-            Nombres :
-            <input type="text" minlength="3" placeholder="Ingrese su nombre" required>
-        </label>
+        <h1>Registrarse :</h1>
 
-        <label>
-            Apellidos :
-            <input type="text" minlength="3" placeholder="Ingrese sus apellidos" required>
-        </label>
+        <form>
 
-        <label>
-            Email : 
-            <input type="email" placeholder="Ej.  ejemplo@gmail.com" required>
-        </label>
+            <label>
+                Nombres :
+                <input type="text" minlength="3" placeholder="Ingrese su nombre" required>
+            </label>
+    
+            <label>
+                Apellidos :
+                <input type="text" minlength="3" placeholder="Ingrese sus apellidos" required>
+            </label>
+    
+            <label>
+                Email : 
+                <input type="email" placeholder="Ej.  ejemplo@gmail.com" required>
+            </label>
+    
+            <label>
+                Telefono :
+                <input type="tel" placeholder="(054) 947165075" required>
+            </label>
+    
+            <label>
+                Password :
+                <input type="password" placeholder="Ingrese contrasena" required>
+            </label>
+    
+            <label>
+                Confirmar password :
+                <input type="password" placeholder="Confirme contrasena" required>
+            </label>
+    
+            <input class="outline" type="submit" value="Registrase">
 
-        <label>
-            Telefono :
-            <input type="tel" placeholder="00 000000000" required>
-        </label>
-
-        <label>
-            Password :
-            <input type="password" placeholder="Ingrese contrasena" required>
-        </label>
-
-        <label>
-            Confirmar password :
-            <input type="password" placeholder="Confirme contrasena" required>
-        </label>
-
-        <input type="submit" value="Registrase">
+        </form>
+   
 
 
     </main>

@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Reto: Formulario de registro</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
+
+    <link rel="stylesheet" href="reto-registrar.css">
 </head>
 <body>
     <!--TODO: Crear un formulario para crear una cuenta usuarios con los campos:
@@ -45,15 +47,53 @@
                 Apellidos :
                 <input type="text" minlength="3" placeholder="Ingrese sus apellidos" required>
             </label>
-    
+
+            <label>
+                Edad:
+                <input type="number" placeholder="Ej: 19" required>
+            </label>
+
+            <label>
+                Fecha de nacimiento:
+                <input type="date" required>
+            </label>
+
+            <label>
+                Genero:
+                <select name="genero" id="genero" >
+                    <option value="S"selected disabled>Seleccione uno</option>
+                    <option value="M">Masculino</option>
+                    <option value="F">Femenino</option>
+                    <option value="O">Otro</option>
+                </select>
+            </label>
+
             <label>
                 Email : 
                 <input type="email" placeholder="Ej.  ejemplo@gmail.com" required>
             </label>
+
+            <label>
+                Direccion:
+                <input type="text" required placeholder="Direccion">
+                <input type="text" required placeholder="Direccion de linea 2">
+            </label>
+
     
             <label>
                 Telefono :
                 <input type="tel" placeholder="(054) 947165075" required>
+            </label>
+
+            <label>
+                Codigo Postal:
+                <input type="text" placeholder="Ej: 14001" required>
+            </label>
+
+            
+            <label>
+                Ciudad:
+                <input type="text" placeholder="Ej: Chiclayo" required>
             </label>
     
             <label>
@@ -65,8 +105,18 @@
                 Confirmar password :
                 <input type="password" placeholder="Confirme contrasena" required>
             </label>
+
+            <label>
+                Subir firma:
+                <input type="file" name="Choose File" accept=".pdf">
+            </label>
+
+            <input type="checkbox" value="politica" id="politica">
+            <label for="politica">Acepte los terminos,condiciones y politicas</label>
+            
+
     
-            <input class="outline" type="submit" value="Registrase">
+            <input class="registrar" type="submit" value="Registrase">
 
         </form>
    

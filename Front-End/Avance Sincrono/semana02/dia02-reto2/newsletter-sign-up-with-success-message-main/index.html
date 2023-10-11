@@ -6,42 +6,50 @@
   <title>Document</title>
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-  <main>
+  <div class="container">
+    <div class="content">
+      <h1> Stay updated!</h1>
+      <p> 
+        Join 60,000+ product managers receiving monthly updates on:
+      </p>
+      <ul>
+        <li> Product discovery and building what matters</li>
+        <li>  Measuring to ensure updates are a success</li>
+        <li> And much more!</li>
+      </ul>
 
-      <section class="content">
+      <form>
+        <label for="email">Email address</label>
+        <input type="email" id="email" placeholder="email@company.com" required>
+        <button type="submit">  Subscribe to monthly newsletter </button>  
+      </form>
 
-        <h1>Stay updated!</h1>
+    </div>
+    
+    <div class="photo">
+      <img src="./assets/images/illustration-sign-up-desktop.svg" alt="foto_banner">
+    </div>
 
-        <p>Join 60,000+ product managers receiving monthly updates on:</p>
+  </div>
 
-        
-        <p>  <img src="./assets/images/icon-list.svg" alt="" class="vineta">
-          Product discovery and building what matters</p>
-        
-        <p> <img src="./assets/images/icon-list.svg" alt="" class="vineta">
-          Measuring to ensure updates are a success</p>
-        
-        <p> <img src="./assets/images/icon-list.svg" alt="" class="vineta"> And much more!</p>
+  <!--Mensaje de exito-->
 
-        <label class="lblemail">
-          Email address
-        </label>
+  <div class="container-2 hide">
 
-        <input type="email" placeholder="email@company.com">
+    <img src="./assets/images/icon-success.svg" alt="imagen_icono_exito" class="icon-container-2">
+    <h1> Thanks for subscribing!</h1>
+    <p>  A confirmation email has been sent to ash@loremcompany.com. 
+      Please open it and click the button inside to confirm your subscription.
+    </p>
+    <button class="dismiss">Dismiss message</button>
 
-        <button class="boton">
-          Subscribe to monthly newsletter
-        </button>
 
-      </section>
+  </div>
 
-      <section class="photo">
-
-      </section>
-
-  </main>
-
+  <script src="index.js"></script>
 </body>
+
 </html> 

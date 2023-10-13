@@ -6,25 +6,8 @@ font-family: 'Roboto', sans-serif;
 
 *{
     box-sizing: border-box;
-    margin: 0;
 }
 
 body{
     font-family:'Roboto', sans-serif;
-    padding: 90px 20px 0;
-}
-
-.header{
-    background-color: #49b6c8;
-    color: white;
-    height: 80px;
-    width: 100%;
-    position: fixed;
-    top: 0;
-    left: 0;
-  
-}
-.menu{
-    display: flex;
-    justify-content: space-between;
 }

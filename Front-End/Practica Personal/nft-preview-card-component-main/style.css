@@ -1,0 +1,98 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body{
+    background-color: hsl(217, 54%, 11%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-size: 18px;
+}
+
+.main{
+
+    width: 650px;
+    min-height: 400px;
+    display: flex;
+
+ 
+
+    padding: 3rem;
+    justify-content: center;
+    align-items: center;
+
+    background-color: hsl(216, 50%, 16%);
+    border-radius: 1.5rem;
+
+}
+
+.card_img{
+    border-radius: 1.5rem;
+    width: 580px;
+    margin-bottom: 1rem;
+}
+
+.card_title{
+    color: hsl(0, 0%, 100%);
+    font-weight: 600;
+    margin-bottom: 2rem;
+}
+
+.card_text{
+    color: hsl(215, 51%, 70%);
+    font-weight: 400;
+    font-size: 18px;
+    margin-bottom: 2rem;
+}
+
+.card_details{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    
+}
+.card_details_eth{
+    color: hsl(178, 100%, 50%);
+    font-weight: 600;
+    align-items: center;
+}
+
+.card_details_hrs{
+    color: hsl(215, 51%, 70%);
+    font-weight: 400;
+    align-items: center;
+}
+
+.card_creator{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    margin-top: 2rem;
+    padding-top: 1.2rem;
+    border-top: 1px solid hsl(215, 51%, 70%);
+}
+
+.card_creator img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid white;
+}
+
+.card_creator p{
+    color:hsl(215, 51%, 70%)
+}
+
+
+
+
+
+
+

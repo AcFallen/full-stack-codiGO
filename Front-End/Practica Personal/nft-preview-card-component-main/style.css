@@ -16,9 +16,9 @@ body{
 }
 
 .main{
-
-    width: 650px;
-    min-height: 400px;
+    
+    width: 350px;
+    min-height: 450px;
     display: flex;
 
  
@@ -32,9 +32,13 @@ body{
 
 }
 
+.card{
+    min-height: 400px;
+}
+
 .card_img{
     border-radius: 1.5rem;
-    width: 580px;
+    width: 300px;
     margin-bottom: 1rem;
 }
 

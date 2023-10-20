@@ -92,7 +92,7 @@ a{
 
 .hero_title{
     padding-left:3rem;
-    font-family: var(--font-secondary);
+    font-family: var(--font-primary );
     font-weight: var(--font-weight-bold);
     font-size: 2rem;
 
@@ -102,7 +102,7 @@ a{
 .hero_text{
     padding-left: 3rem;
     margin-top: 2rem;
-    color: var(--primary-desaturated-blue);
+    color: var(--primary-very-dark-blue);
     line-height: 1.5    ;
 }
 
@@ -135,5 +135,81 @@ a{
 .hero_content img{
     padding-right: 3rem;
 }
+
+.collaboration{
+    background-color: var(--neutral-light-grayish-blue);
+    padding: 3rem;
+    padding-top: 5rem;
+    display: flex;
+    align-items: center;
+}   
+
+.collaboration_content {
+    display: flex;
+    flex-direction: column  ;
+}
+
+.collaboration_title{
+    font-family: var(--font-primary);
+    font-weight: var(--font-weight-bold);
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+.collaboration_text{
+    font-family: var(--font-secondary);
+    margin-bottom: 2rem;
+}
+
+.how_works_button{
+    display: flex;
+    gap: .3rem;
+    align-items: center;
+    color: var(--accent-moderate-cyan);
+    border-bottom: 1px solid var(--accent-moderate-cyan);
+    padding-bottom: .2rem;
+    width: 190px;
+    margin-bottom: 3rem;
+
+}
+
+
+
+.collaboration_testimonial{
+    width: 60%;
+    padding: 2rem;
+    background-color: white;
+    border-radius: .7rem;
     
+}
+
+.collaboration_testimonial img{
+    margin-bottom: .7rem;
+}
+
+.collaboration_testimonial_text{
+    font-family: var(--font-secondary);
+    font-weight: var(--font-weight-regular);
+    margin-bottom: 2rem;
+}
+
+.collaboration_testimonial_profile{
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+
+}
+
+.collaboration_testimonial_profile img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    
+}
+
+
+.collaboration_testimonial_profile_description h5{
+    font-family: var(--font-weight-regular);
+    font-weight: var(--font-weight-regular);
+}
     

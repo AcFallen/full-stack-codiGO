@@ -52,6 +52,12 @@ a{
     text-decoration: none;
 }
 
+a:hover{
+    text-decoration: underline;
+    font-weight: bold;
+
+}
+
 /*Responsive para imagenes*/
 img{
     max-width: 100%;
@@ -70,7 +76,14 @@ img{
     display: flex;
     justify-content: space-between;
 
-    margin-top: 2rem;
+    margin-top: 3rem;
+}
+
+@media(max-width: 768px){
+    .header{
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
 .header_nav{
@@ -141,8 +154,23 @@ img{
             90deg,
             var(--accent-cyan)0%,
             var(--accent-blue)35%
-        )
+        );
 
+    transition: all 1s ease;
+
+}
+
+.hero_button:hover{
+
+    background:
+    linear-gradient(
+        90deg,
+        var(--accent-cyan)35%,
+        var(--accent-blue)100%
+    );
+    cursor: pointer;
+    
+   
 }
 
 .features{
@@ -202,7 +230,7 @@ img{
     display: flex;
     flex-direction: column;
     gap: 1rem;
-    width: 30rem;
+    width: min(100% - 3rem, 30rem )
 }
 
 .how_works_title{
@@ -229,6 +257,15 @@ img{
     border-bottom: 1px solid var(--accent-cyan) ;
     padding-bottom: 0.3rem;
 }
+
+.how_works_button:hover{
+    color: white;
+    text-decoration: none;
+    font-weight: var(--font-weight-regular);
+    border-bottom: 1px solid var(--neutral-white) ;
+
+}
+
 .testimonials{
     background-color: var(--prymary-dark-blue-main);
     display: flex;
@@ -241,6 +278,7 @@ img{
 @media (max-width: 768px){ /* SE APLICA RESPONSIVIDAD EN CELULARES Y TABLETS*/
     .testimonials{
         flex-direction: column;
+        align-items: center;
     }
 }
 
@@ -271,6 +309,7 @@ img{
 
 .early-access{
     font-family: var(--font-primary);
+    width: min(100% -3rem, 30rem);
     padding: 2rem;
 
     display: flex;
@@ -331,7 +370,7 @@ img{
         );
   
     
-}
+}   
 
 .footer{
     font-family: var(--font-primary);
@@ -345,8 +384,10 @@ img{
     flex-direction: column;
     align-items: flex-start;
     gap: 2rem;
-    width: 76rem;
+   
     margin: 0 auto;
+
+    width:  min(100% - 3rem, 76rem);
 }
 
 .footer-info{
@@ -358,7 +399,8 @@ img{
 
 @media (max-width: 768px){ /* SE APLICA RESPONSIVIDAD EN CELULARES Y TABLETS*/
     .footer-info{
-        flex-direction: column;
+        flex-direction: column;      
+       
         
     }
 }

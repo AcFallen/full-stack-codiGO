@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+
+/*     'Open Sans', sans-serif;
+        'Raleway', sans-serif;
+*/
+:root{
+    /* FONTS*/
+
+    --font-primary:'Raleway' , sans-serif;
+    --font-secondary:'Open Sans', sans-serif;
+    --font-size: 16px;
+    --font-weight-regular:400;
+    --font-weight-bold:700;
+
+    /* COLORS */
+
+    --primary-very-dark-blue: hsl(243, 87%, 12%);
+    --primary-desaturated-blue: hsl(238, 22%, 44%);
+
+    --accent-bright-blue: hsl(224, 93%, 58%);
+    --accent-moderate-cyan: hsl(170, 45%, 43%);
+
+
+
+    --neutral-light-grayish-blue: hsl(240, 75%, 98%);
+    --neutral-light-gray: hsl(0, 0%, 75%);
+
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+html{
+    font-size: var(--font-size);
+}
+
+body {
+
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+
+.wrapper{
+    width: min(100% -3rem , 1440px);
+}
+
+.header{
+
+    font-family: var(--font-primary);
+    margin: 0 auto;
+    padding: 3rem;
+    display: flex;
+    justify-content: space-between;
+
+    margin-top: 3rem;
+}
+
+.header_nav{
+    list-style: none;
+    padding: 10px;
+    margin: 10px;
+
+    display: flex;
+
+    gap: 3rem;
+}
+
+.hero{
+
+    display: flex;
+    align-items: center;
+
+    background: url(../images/bg-curve-desktop.svg);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: contain;
+
+}
+
+.hero_title{
+    padding-left:3rem;
+    font-family: var(--font-secondary);
+    font-weight: var(--font-weight-bold);
+    font-size: 2rem;
+
+    color: var(--primary-very-dark-blue);
+}
+
+.hero_text{
+    padding-left: 3rem;
+    margin-top: 2rem;
+    color: var(--primary-desaturated-blue);
+    line-height: 1.5    ;
+}
+
+.hero_content form{
+    padding: 3rem;
+    margin-top: 3rem;
+    display: flex;
+    gap: 1rem;
+}
+
+.hero_content input[type=text]{
+    
+    width: 55%;
+
+    padding: .5rem;
+
+}
+
+.hero_content input[type=submit]{
+    color: var(--neutral-light-grayish-blue);
+    font-weight: var(--font-weight-bold);
+    padding: .5rem;
+    border: none;
+    background-color: hsl(224, 93%, 58%);
+    width: 20%;
+    border-radius: .2rem;
+
+}
+
+.hero_content img{
+    padding-right: 3rem;
+}
+    
+    

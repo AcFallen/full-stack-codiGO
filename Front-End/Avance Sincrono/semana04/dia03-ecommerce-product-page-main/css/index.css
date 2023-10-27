@@ -44,11 +44,15 @@ img {
     height: auto;
 }
 
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
 .wrapper{
     width: min(100% - 3rem, 1200px);
     margin: 0 auto;
 
-    border: 1px solid red;
 }
 .flex{
     display: flex;
@@ -72,6 +76,37 @@ img {
     gap: 0.5rem;
 }
 
+.header__links{
+   /* display: none; */
+}
+
+.header__links--menu{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 300px;
+    height: 100%;
+    background-color: var(--neutral-white);
+    z-index: 30;
+
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    padding: 1.5rem 1rem;
+
+    opacity: 0;
+    transition: opacity 0.6s ease;
+}
+
+input[type=checkbox]:checked ~ .header__links--menu{
+    opacity: 1;
+}
+
+.header-menu{
+    display: none;
+}
+
+
 @media (min-width:768px){
     .product-detail{
         display: flex;
@@ -79,12 +114,43 @@ img {
         gap: 4rem;
     }
 
+    .header_menu{
+        display: none;
+    }
+
+    .header__links--menu{
+        all: unset;
+    }
+
+    .header__links--menu label {
+        display: none;
+    }
+    
+
+    .header__links{
+
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+        margin-left: 3rem;
+
+        color: var(--neutral-dark-grayish-blue);
+
+    }
+
+    
+
+    
 }
 
 
 
 .gallery {
     position: relative;
+}
+
+.gallery_image{
+    border-radius: 1rem;
 }
 
 .gallery_previous,
@@ -109,6 +175,45 @@ img {
     position: absolute;
     right: 1rem;
     top: 50%;
+}
+
+@media(min-width:768px){
+    .gallery_previous, 
+    .gallery_next{
+       display: none;
+    }
+
+}
+
+.gallery-product-thumbnails{
+    display: none;
+}
+
+
+
+@media(min-width:768px){
+
+    .gallery-product-thumbnails{
+        display: flex;
+        justify-content: space-between;
+        padding-top: 1.5rem;
+    }
+
+    .gallery-product-thumbnails img {
+        border-radius: .5rem;
+    }
+    
+    .gallery-product-thumbnails--active{
+        border: 3px solid var(--primary-orange);
+        border-radius: .5rem;
+        width: 80px;
+        height: 80px;
+    }
+    
+    .gallery-product-thumbnails--active img{
+        opacity: .4;
+        border-radius: 0;
+    }
 }
 
 .product{
@@ -142,6 +247,14 @@ img {
     justify-content: space-between;
     align-items: center;
 }
+
+@media (min-width: 768px){
+    .product_price{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
 
 .product_wrapper{
     display: flex;

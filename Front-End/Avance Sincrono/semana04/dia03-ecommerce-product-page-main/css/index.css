@@ -54,6 +54,7 @@ img {
     display: flex;
 }
 
+
 .header {
 
     height: 4.5rem; /* 64px/16px */
@@ -71,12 +72,18 @@ img {
     gap: 0.5rem;
 }
 
-.product-detail{
-    padding: 5rem 3rem;
-    gap: 4rem;
+@media (min-width:768px){
+    .product-detail{
+        display: flex;
+        padding: 5rem 3rem;
+        gap: 4rem;
+    }
+
 }
 
-.gallery{
+
+
+.gallery {
     position: relative;
 }
 
@@ -165,6 +172,7 @@ img {
 .product_qty{
     margin-top: 1rem;
     display: flex;
+    width: 100%;
     justify-content: space-between;
     align-items: center;
     align-content: stretch;
@@ -187,9 +195,9 @@ img {
 }
 
 .product_add-to-cart{
-    width: 100%;
     margin-top: 1rem;
-    padding: 1rem;
+    width: 100%;
+    padding: 1.2rem 1rem;
     border: none;
 
     display: flex;
@@ -213,6 +221,17 @@ img {
     fill: var(--neutral-white);
 }
 
+
+
+
+@media (min-width:768px){ /*Estas reglas se aplican en dispositivos con resolucion mayores a 768px (desktop)*/
+
+    .product-actions{
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+    }
+}
 
 
 

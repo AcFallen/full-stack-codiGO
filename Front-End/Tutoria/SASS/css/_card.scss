@@ -1,0 +1,78 @@
+//COMPONENTE: CARD // SELECTORES ANIDADOS
+
+.card {
+    background-color: $white-color;
+    border-radius: $card-border-radius;
+    width: 323px;
+    margin: 32px auto;
+    overflow: hidden;
+
+    &__body{
+        padding: 25px;
+    }
+
+    &__title {
+        font-size: 18px;
+        font-weight: 700;
+        text-transform: capitalize;
+        margin-top: 16px;
+        color: $black-color;
+    }
+
+    &__text {
+        font-size: 16px;
+        font-weight: 400;
+        color: $black-color;
+        margin-top: 10px;
+    }
+
+
+    &__footer {
+        padding: 25px;
+        padding-top: 0;
+    }
+       
+}
+
+.tag {
+    color: $white-color;
+    background-color: $orange-color;
+    padding: 2px 10px;
+    text-transform: uppercase;
+    border-radius: $card-border-radius;
+
+
+}
+
+
+.user-info {
+    display: grid;
+    grid-template-areas: 
+    "avatar username"
+    "avatar time";
+
+    gap:10px;
+    justify-content: start;
+
+   
+
+    &__avatar {
+        grid-area: avatar;
+        width: 50px;
+        border-radius: 50%;
+    }
+
+    &__title {
+        grid-area: username;
+        font-size: 16px;
+        font-weight: 700;
+        color: $black-color;
+    }
+
+    &__time {
+        grid-area: time;
+        font-size: 14px;
+        font-weight: 400;
+        color: $gray-color;
+    }
+}

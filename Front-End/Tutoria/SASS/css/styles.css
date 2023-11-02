@@ -1,0 +1,75 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&display=swap");
+.card {
+  background-color: #ffffff;
+  border-radius: 10px;
+  width: 323px;
+  margin: 32px auto;
+  overflow: hidden;
+}
+.card__body {
+  padding: 25px;
+}
+.card__title {
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: capitalize;
+  margin-top: 16px;
+  color: #10182f;
+}
+.card__text {
+  font-size: 16px;
+  font-weight: 400;
+  color: #10182f;
+  margin-top: 10px;
+}
+.card__footer {
+  padding: 25px;
+  padding-top: 0;
+}
+
+.tag {
+  color: #ffffff;
+  background-color: #f97316;
+  padding: 2px 10px;
+  text-transform: uppercase;
+  border-radius: 10px;
+}
+
+.user-info {
+  display: grid;
+  grid-template-areas: "avatar username" "avatar time";
+  gap: 10px;
+  justify-content: start;
+}
+.user-info__avatar {
+  grid-area: avatar;
+  width: 50px;
+  border-radius: 50%;
+}
+.user-info__title {
+  grid-area: username;
+  font-size: 16px;
+  font-weight: 700;
+  color: #10182f;
+}
+.user-info__time {
+  grid-area: time;
+  font-size: 14px;
+  font-weight: 400;
+  color: #545d7a;
+}
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+body {
+  background-color: #F5E7DA;
+  font-family: "Mulish", sans-serif;
+}/*# sourceMappingURL=styles.css.map */

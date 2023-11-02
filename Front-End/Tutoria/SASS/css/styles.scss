@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&display=swap');
+
+@import 'variables';
+@import 'mixin';
+@import 'card';
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+
+body{
+    background-color: $beige-color;
+
+    font-family: 'Mulish',sans-serif;
+}
+
+
+
+
+

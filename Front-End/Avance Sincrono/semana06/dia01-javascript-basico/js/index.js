@@ -200,3 +200,32 @@ else if( NumeroFizzBuzz%5 ===0){
 else {
     console.log(NumeroFizzBuzz)
 }
+
+// OBJETOS
+
+const miObjeto = {
+    nombre:'roberto',
+    apellido:'apaza',
+    colorFavorito:'verde'
+
+}
+
+// LEER CAMPOS DE LOS OBJETOS
+
+console.log(miObjeto.nombre)
+
+// SPREAD OPERATOR
+
+ const producto = {
+    nombre:'Laptop',
+    precio:6800,
+    categoria:'tech'
+ }
+ const cliente = {
+    nombreCompleto: 'Claudia',
+    isVip:true
+ }
+
+
+ console.log(producto + cliente)
+ const nuevoObjeto = {...producto , ...cliente}

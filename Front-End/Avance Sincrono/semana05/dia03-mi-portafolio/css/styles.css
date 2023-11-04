@@ -43,4 +43,19 @@ a {
   font-weight: 600;
   padding: 10px;
   margin: 2rem;
+}
+.header__menu a {
+  color: #fff;
+  font-weight: 600;
+  font-size: 1.125rem;
+}
+.header .header__menu--active,
+.header .header__menu a:hover {
+  color: #FFB742;
+  border-bottom: 2px solid #FFB742;
+}
+.header__links {
+  display: flex;
+  align-items: center;
+  gap: 20px;
 }/*# sourceMappingURL=styles.css.map */

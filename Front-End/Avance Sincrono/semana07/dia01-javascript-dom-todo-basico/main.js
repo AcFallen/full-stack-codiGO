@@ -12,6 +12,8 @@ taskAdd.addEventListener('click',function(event){
     // button.textContent = 'Hola soy un boton'
     // document.body.appendChild(button)
 
+
+
     if (taskImput.value != ''){
         const li = document.createElement('li')
         const checkbox = document.createElement('input')
@@ -23,13 +25,39 @@ taskAdd.addEventListener('click',function(event){
         span.textContent = taskImput.value
         li.appendChild(span)
 
+        const button = document.createElement('button')
+        button.textContent = 'Borrar'
+        li.appendChild(button)
+
+        // TODO: Anadir un boton al li con el texto borrar y al hacer click en el boton que se elimine la fila de la tarea
+
         
         taskList.appendChild(li)
        
     
         taskImput.value = ''
+
+
+    } else {
+        alert('El campo es requerido')
+        return
     }
 
+})
+
+taskList.addEventListener('click',function(event){
+    
+    const target = event.target
+
+    if(target.tagName === 'Input' && target.type === 'checkbox'){
+        target.classList.toggle('completed')
+    }
+
+    // Eliminar un tarea de la lista en especifico
+    
+    if(target.tagName === 'BUTTON'){
+        target.parentElement.remove()
+    }
 })
 
 

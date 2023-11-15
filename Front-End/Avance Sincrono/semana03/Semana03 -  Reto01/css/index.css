@@ -87,7 +87,11 @@ a{
     background-repeat: no-repeat;
     background-position: bottom;
     background-size: contain;
+   
 
+}
+.hero_content{
+    border: 1px solid red;
 }
 
 .hero_title{
@@ -111,6 +115,7 @@ a{
     margin-top: 3rem;
     display: flex;
     gap: 1rem;
+    
 }
 
 .hero_content input[type=text]{

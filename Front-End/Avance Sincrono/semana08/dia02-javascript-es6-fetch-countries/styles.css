@@ -5,6 +5,8 @@
 
 /* font-family: 'Nunito Sans', sans-serif; */
 
+
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -109,5 +111,51 @@ h1 {
 }
 
 .app__list {
-  border: 1px solid red;
+  display: grid;
+  grid-template-columns: repeat(1,fr);
+  gap: 3rem;
+  justify-content: center;
+}
+
+
+@media screen and (min-width: 768px){
+  /* Esta media query es para dispositivos desde tablets */
+
+  .app__list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (min-width: 992px){
+  /* Esta media query es para dispositivos desde desktop */
+
+  .app__list {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.country {
+  
+  border-radius: .5rem;
+  background-color: white;
+  box-shadow: 1px 1px 3px #f1f1f1;
+  overflow: hidden;
+}
+
+.country__flag {
+
+}
+
+.country__wrapper {
+  padding: 1.5rem;
+}
+
+.country__title {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.country__description {
+  font-size: .9rem;
+  margin-bottom: .5rem;
 }

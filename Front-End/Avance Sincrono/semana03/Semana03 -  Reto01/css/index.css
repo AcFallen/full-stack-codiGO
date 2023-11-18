@@ -55,6 +55,8 @@ a{
 
 .wrapper{
     width: min(100% -3rem , 1440px);
+    border: 1px solid red;
+ 
 }
 
 .header{
@@ -65,7 +67,8 @@ a{
     display: flex;
     justify-content: space-between;
 
-    margin-top: 3rem;
+    margin-top: 1.5rem;
+
 }
 
 .header_nav{
@@ -79,19 +82,17 @@ a{
 }
 
 .hero{
-
-    display: flex;
-    align-items: center;
-
     background: url(../images/bg-curve-desktop.svg);
     background-repeat: no-repeat;
     background-position: bottom;
     background-size: contain;
-   
+    padding-bottom: 10rem;
 
 }
-.hero_content{
-    border: 1px solid red;
+
+.hero__container {
+    display: flex;
+    align-items: center;
 }
 
 .hero_title{
@@ -142,39 +143,46 @@ a{
 }
 
 .collaboration{
-    background-color: var(--neutral-light-grayish-blue);
+    background-color: #F8F8FE;
+   
     padding: 3rem;
     padding-top: 5rem;
     display: flex;
     align-items: center;
+
+    padding-bottom: 6rem;
 }   
 
 .collaboration_content {
     display: flex;
     flex-direction: column  ;
+
 }
 
 .collaboration_title{
     font-family: var(--font-primary);
     font-weight: var(--font-weight-bold);
-    font-size: 2rem;
+
+    font-size: 2.3rem;
     margin-bottom: 2rem;
 }
 
 .collaboration_text{
     font-family: var(--font-secondary);
     margin-bottom: 2rem;
+
+    width: 80%;
 }
 
 .how_works_button{
     display: flex;
-    gap: .3rem;
+    gap: .5rem;
     align-items: center;
     color: var(--accent-moderate-cyan);
     border-bottom: 1px solid var(--accent-moderate-cyan);
     padding-bottom: .2rem;
-    width: 190px;
-    margin-bottom: 3rem;
+    width: 158px;
+    margin-bottom: 3rem; 
 
 }
 
@@ -185,6 +193,8 @@ a{
     padding: 2rem;
     background-color: white;
     border-radius: .7rem;
+
+    box-shadow: 0 0 10px var(--neutral-light-gray);
     
 }
 
@@ -216,5 +226,15 @@ a{
 .collaboration_testimonial_profile_description h5{
     font-family: var(--font-weight-regular);
     font-weight: var(--font-weight-regular);
+}
+
+.early_access {
+    background-color: var(--primary-desaturated-blue);
+    
+    display: flex;
+}
+
+.early_access--contend{
+    border: 1px solid red;
 }
     

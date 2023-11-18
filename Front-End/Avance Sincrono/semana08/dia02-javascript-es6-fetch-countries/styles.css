@@ -41,6 +41,7 @@ h1 {
 
   /* DE ESTA MANERA EL CONTENEDOR SE CENTRA */
   margin: 0 auto;
+
 }
 
 .hidden {
@@ -142,9 +143,6 @@ h1 {
   overflow: hidden;
 }
 
-.country__flag {
-
-}
 
 .country__wrapper {
   padding: 1.5rem;

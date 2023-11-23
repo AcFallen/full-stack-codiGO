@@ -77,11 +77,21 @@ const renderResults = (countriesFiltered) => {
   resultsDiv.textContent = `${total} countries filtered`
 }
 
-const renderCountries = (countries) => {
+const renderCountries = (countries = []) => {
 
   const countryListElement = document.querySelector('.app__list')
 
   let countryList = ''
+
+  if (countries.length === 0) {
+    countryListElement.classList.add('app_list--no--found')
+      countryListElement.innerHTML = `
+      <img src="./images/sad-square.svg" width=100/>
+      <p> Sorry, no se encontraron respuestas!</p>
+      `
+     
+      return
+  }
 
   countries.forEach(country => {
     countryList += `

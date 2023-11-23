@@ -114,8 +114,12 @@ h1 {
 .app__list {
   display: grid;
   grid-template-columns: repeat(1,fr);
-  gap: 3rem;
+  gap: 3rem;  
   justify-content: center;
+}
+
+.app_list--no--found {
+  
 }
 
 

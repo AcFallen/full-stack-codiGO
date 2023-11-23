@@ -143,6 +143,13 @@ h1 {
   overflow: hidden;
 }
 
+/* RWD en imagenes con sus contenedores */
+.country__flag {
+  aspect-ratio: 3/2;
+  object-fit: contain;
+  width: 100%;
+}
+
 
 .country__wrapper {
   padding: 1.5rem;

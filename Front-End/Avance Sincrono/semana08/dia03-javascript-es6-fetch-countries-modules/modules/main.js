@@ -1,11 +1,13 @@
-const url = 'https://restcountries.com/v3.1/all?fields=name,flags,capital,population,languages,currencies,timezones,region'
+import {renderCountries, renderResults} from './utils.js'
+import fetchCountries from './services.js'
+import name from './constans.js'
+
 
 let countryData = []
 
-
 const searchInput = document.querySelector('.app__input')
 const filterSelect = document.querySelector('.app__filter')
-const resultsDiv =document.querySelector('.app__results')
+
 // function fetchCountries(){
 //   return fetch(url) // PROMISE
 //     .then(response => response.json())
@@ -50,28 +52,6 @@ filterSelect.addEventListener('input', (event) => {
   renderCountries(filterCountriesByRegion)
 
 })
-
-
-// TODO: USAR la funcion usnado async/await
-
-const fetchCountries = async() => {
-    try {
-      const response = await fetch(url) // Promise
-
-      // IDENTIFICAMOS SI LA RESPUESTA FUE CORRECTA
-      if (!response.ok) {
-        throw new Error('ERROR!!!',response.status)
-      }
-
-      const json = await response.json()
-
-      return json
-
-    } catch (error) {
-      console.log(error)
-    }
-}
-
 
 
 document.addEventListener('DOMContentLoaded', async() =>{

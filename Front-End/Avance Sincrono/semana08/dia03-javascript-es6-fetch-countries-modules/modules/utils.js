@@ -1,9 +1,12 @@
-const renderResults = (countriesFiltered) => {
+export const renderResults = (countriesFiltered) => {
+
+  const resultsDiv =document.querySelector('.app__results')
+
   const total = countriesFiltered.length
   resultsDiv.textContent = `${total} countries filtered`
 }
 
-const renderCountries = (countries = []) => {
+export const renderCountries = (countries = []) => {
 
   const countryListElement = document.querySelector('.app__list')
 

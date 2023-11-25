@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+/* font-family: 'DM Serif Display', serif;
+font-family: 'Karla', sans-serif; */
+
+:root {
+  --font-primary:'DM Serif Display', serif;
+  --font-secondary:'Karla', sans-serif; 
+  --font-size: 16px;
+  --font-weight-regular:400;
+  --font-weight-bold:700;
+
+  /* ### Primary */
+
+  --primary-dark-violet: hsl(256, 26%, 20%);
+  --grayish-blue: hsl(216, 30%, 68%);
+
+  /* ### Neutral */
+
+  --neutral-very-dark-violet: hsl(270, 9%, 17%);
+  --neutral-dark-grayish-violet: hsl(273, 4%, 51%);
+  --neutral-very-light-gray: hsl(0, 0%, 98%);
+}
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+}
+
+html {
+  font-size: var(--font-size);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.wrapper{
+  width:  min(100% - 3rem , 1440px);
+  margin: 0 auto;
+}
+
+.header {
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__nav {
+  list-style: none;
+
+  display: flex;
+  gap: 2rem;
+  padding: 2rem;
+  align-items: center;
+
+  text-transform: uppercase;
+  font-family: var(--font-secondary);
+  color: var(--neutral-dark-grayish-violet);
+
+}
+
+.header__nav li:last-child {
+  border: 2px solid var(--primary-dark-violet) ;
+  padding: .5rem .8rem;
+}
+
+.hero {
+  background-color: var( --primary-dark-violet);
+}

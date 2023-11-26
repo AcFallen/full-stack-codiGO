@@ -70,5 +70,59 @@ img {
 }
 
 .hero {
-  background-color: var( --primary-dark-violet);
+  background-color: var(--primary-dark-violet);
 }
+
+.hero__container {
+  display: flex;
+  align-items: center;
+  
+}
+
+.hero {
+  /* background-image: url(../images/bg-pattern-intro-right-desktop.svg);
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: contain; */
+  
+}
+
+.hero__contend {
+  color: var(--neutral-very-light-gray);
+
+  width: 55%;
+}
+
+.hero__contend--title {
+
+  font-family: var(--font-primary);
+  font-weight: var(--font-weight-bold);
+  font-size: 4rem;
+  
+  margin-bottom: 2rem;
+}
+
+.hero__contend--text {
+  width: 90%;
+
+  font-family: var(--font-secondary);
+  margin-bottom: 2rem;
+}
+
+.hero__contend--button {
+  background-color: inherit;
+  color: var(--neutral-very-light-gray);
+  border: 1px solid var(--neutral-very-light-gray);
+  text-transform: uppercase;
+  font-family: var(--font-secondary);
+  font-weight: var(--font-weight-regular);
+
+  padding: .5rem 1rem;
+}
+
+.hero__container img {
+  position: relative;
+  top: 6rem;
+  z-index: 0;
+}
+

@@ -29,3 +29,17 @@ export const createPelicula = async (form) => {
 
     return data
 }
+
+export const deletePelicula = async (id) => {
+    const url = `http://localhost:3000/peliculas/${id}`
+
+    const options = {
+        method: 'DELETE'
+    }
+
+    const response = await fetch(url, options)
+
+    const data = await response.json()
+
+    return data
+}

@@ -1,4 +1,6 @@
-export const renderPeliculas = (peliculas) => {
+import { fetchPeliculas, deletePelicula } from "./services.js";
+
+export const renderPeliculas =  (peliculas) => {
     const peliculasList = document.querySelector('.peliculas__list')
 
     let elementos = ''
@@ -8,7 +10,9 @@ export const renderPeliculas = (peliculas) => {
             <tr>
                 <td>${pelicula.id}</td>
                 <td>
-                    <img src="${pelicula.imagen}" width="100" heigh="250" />
+                    <img src="${pelicula.imagen}" 
+                    onerror="this.src='https://placehold.co/300x450'"
+                    width="100" heigh="250" />
                 </td>
                 <td>
                     <strong>${pelicula.nombre}</strong>
@@ -25,7 +29,7 @@ export const renderPeliculas = (peliculas) => {
                 <td>
                     <div class="flex gap-0.5">
                         <button class="pelicula__edit">🖊️</button>
-                        <button class="pelicula__remove">❌</button>
+                        <button class="pelicula__remove" data-id="${pelicula.id}">❌</button>    
                     </div>
                 </td>
             </tr>
@@ -33,4 +37,21 @@ export const renderPeliculas = (peliculas) => {
     });
 
     peliculasList.innerHTML = elementos
+
+    const removeBotones = document.querySelectorAll('.pelicula__remove')
+
+    removeBotones.forEach(button => {
+        button.addEventListener('click', async (event) => {
+            const id = event.target.dataset.id
+
+            const response = await deletePelicula(id)
+
+            if (response) {
+                const peliculas = await fetchPeliculas()
+
+                renderPeliculas(peliculas)
+            }
+        })
+        
+    });
 }

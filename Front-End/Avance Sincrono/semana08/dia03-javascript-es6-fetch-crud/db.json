@@ -97,28 +97,12 @@
       "resumen": "In a city where fire, water, land and air residents live together, a fiery young woman and a go-with-the-flow guy will discover something elemental: how much they have in common."
     },
     {
-      "id": 9,
-      "nombre": "The Super Mario Bros. Movie",
-      "imagen": "https://www.themoviedb.org/t/p/w300_and_h450_bestv2/qNBAXBIQlnOThrVvA6mA2B5ggV6.jpg",
-      "estreno": "2023-04-05",
-      "generoId": 3,
-      "resumen": "Resumen de prueba"
-    },
-    {
-      "nombre": "Pelicula",
-      "imagen": "https://pics.filmaffinity.com/Spider_Man_No_Way_Home-387287198-large.jpg",
-      "estreno": "2023-11-09",
-      "generoId": 2,
-      "resumen": "asdasdasd",
-      "id": 10
-    },
-    {
-      "nombre": "Sherk",
-      "imagen": "https://m.media-amazon.com/images/M/MV5BOGZhM2FhNTItODAzNi00YjA0LWEyN2UtNjJlYWQzYzU1MDg5L2ltYWdlL2ltYWdlXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_.jpg",
+      "nombre": "Hola",
+      "imagen": "Hola2",
       "estreno": "2023-11-16",
       "generoId": 3,
-      "resumen": "Ogro",
-      "id": 11
+      "resumen": "Resumen",
+      "id": 9
     }
   ]
 }

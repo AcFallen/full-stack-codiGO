@@ -31,6 +31,16 @@ peliculasForm.addEventListener('submit', async (event) => {
 
     console.log(response)
 
+    if (response) {
+        const peliculas = await fetchPeliculas()
+
+        renderPeliculas(peliculas)
+    }
+
+    peliculaForm.reset()
+
+
+
 } )
 
 

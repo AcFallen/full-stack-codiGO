@@ -1,11 +1,79 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CRUD de peliculas con JSON Server</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1.5.10/css/pico.min.css">
+
+    <style>
+        .fs-small {
+            font-size: .8rem;
+        }
+        .flex {
+            display: flex;
+        }
+        .gap-0\.5{
+            gap: 0.5rem;
+        }
+    </style>
+
 </head>
 <body>
-    <h1>CRUD de peliculas con json-server</h1>
+    <nav class="container-fluid">
+        <ul>
+            <li>
+                <strong>CRUD de Peliculas con json-server</strong>
+            </li>
+        </ul>
+        <ul>
+            <li>
+                Nuevo Producto
+            </li>
+        </ul>
+    </nav>
+
+    <div class="container-fluid">
+        <div class="grid">
+            <div>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Imagen</th>
+                            <th>Nombre</th>
+                            <th>Acciones</th>
+                        </tr>
+                    </thead>
+                    <tbody class="peliculas__list">
+                    </tbody>
+                </table>
+            </div>
+            <div>
+                <form id="peliculasForm" action="">
+                    <h2>Nueva Pelicula</h2>
+
+                    <input type="text" name="nombre" placeholder="Nombre" required>
+                    <input type="text" name="imagen" placeholder="Imagen" required>
+                    <input type="date" name="estreno" placeholder="Estreno" required>
+                    <select name="genero" required>
+                        <option value="">Selecciona un genero</option>
+                        <option value="1">Comedia</option>
+                        <option value="2">Accion</option>
+                        <option value="3">Animacion</option>
+                        <option value="4">Aventura</option>
+                    </select>
+                    <textarea name="resumen" placeholder="Resumen"></textarea>
+                    <input type="submit" value="Guardar">
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <footer class="container-fluid">
+        Roberto Apaza Cornejo -Noviembre 2023
+    </footer>
+    
+    <script src="./main.js" type="module"></script>
 </body>
 </html>

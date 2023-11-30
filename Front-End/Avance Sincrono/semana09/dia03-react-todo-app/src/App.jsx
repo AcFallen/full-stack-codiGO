@@ -49,6 +49,10 @@ export const App = () => {
     setInput('')
   }
 
+  const handleRemoveTodo = (event) => {
+    console.log('Eliminando tarea')
+  }
+
   return(
    <main className="bg-yellow-100 w-full max-w-sm mx-auto mt-10 border border-yellow-600 rounded-lg shadow-lg p-4">
     <h1 className="text-2xl font-bold">TODO APP</h1>
@@ -84,7 +88,7 @@ export const App = () => {
                       <div>
                         {todo.title}
                       </div>
-                      <button className="font-bold bg-red-300 rounded-lg px-2 py-2 hover:bg-red-400 duration-200">
+                      <button onClick={handleRemoveTodo} className="font-bold bg-red-300 rounded-lg px-2 py-2 hover:bg-red-400 duration-200">
                         ❌
                       </button>
                   </div>

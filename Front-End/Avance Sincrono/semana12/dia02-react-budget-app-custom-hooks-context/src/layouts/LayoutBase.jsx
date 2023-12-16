@@ -26,10 +26,13 @@ const LayoutBase = () => {
 
                     {user?.email && (
                         <>
-                            <Link to='/'>Home</Link>
+                            
                             <div className="font-bold">
                                 Welcome, {user.fullname}
                             </div>
+                            <Link to='/'>Home</Link>
+                            <Link to='/new-budget'>New Budget</Link>
+
                             <button onClick={handleLogout}>
                                 Logout
                             </button>

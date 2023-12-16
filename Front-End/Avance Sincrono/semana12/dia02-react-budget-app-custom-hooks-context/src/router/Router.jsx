@@ -2,20 +2,30 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import Home from '../pages/Home'
 import Login from '../pages/Login'
 import Register from '../pages/Register'
-import LayoutBase from '../layouts/Layoutbase'
+import LayoutBase from '../layouts/LayoutBase'
+import PrivateRoute from './PrivateRoute'
+import { UserProvider } from '../context/UserContext'
 
 const Router = () => {
   return (
-    <BrowserRouter>
+    <UserProvider>
+      <BrowserRouter>
         <Routes>
             <Route path='/' element={<LayoutBase />}>
-              <Route index element={<Home />}></Route>
+
+              <Route element={<PrivateRoute />}>
+                <Route index element={<Home />}></Route>
+              </Route>
+              
+
               <Route path='/login' element={<Login />}></Route>
               <Route path='/register' element={<Register />}></Route>
             </Route>
             
         </Routes>
-    </BrowserRouter>
+      </BrowserRouter>
+    </UserProvider>
+    
   )
 }
 
